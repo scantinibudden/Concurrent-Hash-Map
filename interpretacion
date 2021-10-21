@@ -1,0 +1,11 @@
+uno de los (probabalemente el mas) importante problema a la hora de implementar sistemas operativos es el tema de la gestion de la concurrencia. Practicaremos como razonar soble la ejecucion concurrente de programas y las tecnicas para gestionar la contencion sobre los recursos y evitar que se produzcan condiciones de carrera. 
+
+Nos centraremos especialmente en el uso de threads, una herramienta provista por los sistemas operatiovpos que nos permite disponer de varios hilos de ejecucion concurrentes dentro de un mismo programa. En particular, emplearemos la interfaz para threads que forma parte de la libreria estandar de c++.
+
+Realizaremos la implementacion de una estructura de datos que sera denominada HashMapConcurrente. Se trata de una tabla de hash abierta, que gestiona las colisiones usando listas enlazadas. Su interfaz de uso es la de un map o diccionario, cuyas claves seran strings y sus valores enteros no negativos. 
+La idea es poder aplicar esta estructura para procesar archivos de texto contabilizando la cantidad de apariciones de palabras (las claves eran las palabras y los valores, su cantidad de apariciones).
+
+Pautas generales
+La catedra les brinda un esqueleto de codigo sobre el cual trabajar, que sera descripto a lo largo de los ejercicios. 
+El mismo incluye un Makefile que prodran usar para compilar el proyecto. Tambien se les proporciona un conjunto de tests unitarios para probar los metodos que deben implementar; estos tests se brindan unicamente a modo de guia y no evaluan aspectos de concurrencia, por lo que podrian no detectar condiciones de carrerau otros problemas de sus implementaciones. Bajo ningun punto de vista estos tests constituyen una garantia de que sus soluciones sean correctas. 
+El codigo que entreguen sera acompaniado de un informe que describa el proceso de resolucion del TP 
