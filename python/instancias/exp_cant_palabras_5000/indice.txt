@@ -1,0 +1,10 @@
+instancias/exp_cant_palabras_5000/exp_cant_palabras_5000_1.txt 
+instancias/exp_cant_palabras_5000/exp_cant_palabras_5000_2.txt 
+instancias/exp_cant_palabras_5000/exp_cant_palabras_5000_3.txt 
+instancias/exp_cant_palabras_5000/exp_cant_palabras_5000_4.txt 
+instancias/exp_cant_palabras_5000/exp_cant_palabras_5000_5.txt 
+instancias/exp_cant_palabras_5000/exp_cant_palabras_5000_6.txt 
+instancias/exp_cant_palabras_5000/exp_cant_palabras_5000_7.txt 
+instancias/exp_cant_palabras_5000/exp_cant_palabras_5000_8.txt 
+instancias/exp_cant_palabras_5000/exp_cant_palabras_5000_9.txt 
+instancias/exp_cant_palabras_5000/exp_cant_palabras_5000_10.txt 

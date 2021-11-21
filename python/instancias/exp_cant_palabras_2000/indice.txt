@@ -1,0 +1,10 @@
+instancias/exp_cant_palabras_2000/exp_cant_palabras_2000_1.txt 
+instancias/exp_cant_palabras_2000/exp_cant_palabras_2000_2.txt 
+instancias/exp_cant_palabras_2000/exp_cant_palabras_2000_3.txt 
+instancias/exp_cant_palabras_2000/exp_cant_palabras_2000_4.txt 
+instancias/exp_cant_palabras_2000/exp_cant_palabras_2000_5.txt 
+instancias/exp_cant_palabras_2000/exp_cant_palabras_2000_6.txt 
+instancias/exp_cant_palabras_2000/exp_cant_palabras_2000_7.txt 
+instancias/exp_cant_palabras_2000/exp_cant_palabras_2000_8.txt 
+instancias/exp_cant_palabras_2000/exp_cant_palabras_2000_9.txt 
+instancias/exp_cant_palabras_2000/exp_cant_palabras_2000_10.txt 

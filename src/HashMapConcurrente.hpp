@@ -6,7 +6,7 @@
 #include <atomic>
 #include <string>
 #include <vector>
-
+#include <algorithm>
 #include "ListaAtomica.hpp"
 
 typedef std::pair<std::string, unsigned int> hashMapPair;
@@ -25,7 +25,11 @@ class HashMapConcurrente {
     hashMapPair maximoParalelo(unsigned int cantThreads);
 
  private:
+    void maxList();
+    ListaAtomica<hashMapPair>::iterator itSearch (std::string clave);
     ListaAtomica<hashMapPair> *tabla[HashMapConcurrente::cantLetras];
+   //  std::vector<std::string> c;
+
 
     static unsigned int hashIndex(std::string clave);
 };

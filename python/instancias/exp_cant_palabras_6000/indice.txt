@@ -1,0 +1,10 @@
+instancias/exp_cant_palabras_6000/exp_cant_palabras_6000_1.txt 
+instancias/exp_cant_palabras_6000/exp_cant_palabras_6000_2.txt 
+instancias/exp_cant_palabras_6000/exp_cant_palabras_6000_3.txt 
+instancias/exp_cant_palabras_6000/exp_cant_palabras_6000_4.txt 
+instancias/exp_cant_palabras_6000/exp_cant_palabras_6000_5.txt 
+instancias/exp_cant_palabras_6000/exp_cant_palabras_6000_6.txt 
+instancias/exp_cant_palabras_6000/exp_cant_palabras_6000_7.txt 
+instancias/exp_cant_palabras_6000/exp_cant_palabras_6000_8.txt 
+instancias/exp_cant_palabras_6000/exp_cant_palabras_6000_9.txt 
+instancias/exp_cant_palabras_6000/exp_cant_palabras_6000_10.txt 

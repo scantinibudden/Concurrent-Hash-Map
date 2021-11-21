@@ -1,0 +1,10 @@
+instancias/exp_cant_palabras_10000/exp_cant_palabras_10000_1.txt 
+instancias/exp_cant_palabras_10000/exp_cant_palabras_10000_2.txt 
+instancias/exp_cant_palabras_10000/exp_cant_palabras_10000_3.txt 
+instancias/exp_cant_palabras_10000/exp_cant_palabras_10000_4.txt 
+instancias/exp_cant_palabras_10000/exp_cant_palabras_10000_5.txt 
+instancias/exp_cant_palabras_10000/exp_cant_palabras_10000_6.txt 
+instancias/exp_cant_palabras_10000/exp_cant_palabras_10000_7.txt 
+instancias/exp_cant_palabras_10000/exp_cant_palabras_10000_8.txt 
+instancias/exp_cant_palabras_10000/exp_cant_palabras_10000_9.txt 
+instancias/exp_cant_palabras_10000/exp_cant_palabras_10000_10.txt 

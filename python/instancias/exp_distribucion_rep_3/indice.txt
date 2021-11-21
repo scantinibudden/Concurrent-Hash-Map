@@ -1,0 +1,4 @@
+instancias/exp_distribucion_rep_3/exp_distribucion_rep_3_1.txt 
+instancias/exp_distribucion_rep_3/exp_distribucion_rep_3_2.txt 
+instancias/exp_distribucion_rep_3/exp_distribucion_rep_3_3.txt 
+instancias/exp_distribucion_rep_3/exp_distribucion_rep_3_4.txt 

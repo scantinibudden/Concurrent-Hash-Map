@@ -1,0 +1,10 @@
+instancias/exp_cant_palabras_9000/exp_cant_palabras_9000_1.txt 
+instancias/exp_cant_palabras_9000/exp_cant_palabras_9000_2.txt 
+instancias/exp_cant_palabras_9000/exp_cant_palabras_9000_3.txt 
+instancias/exp_cant_palabras_9000/exp_cant_palabras_9000_4.txt 
+instancias/exp_cant_palabras_9000/exp_cant_palabras_9000_5.txt 
+instancias/exp_cant_palabras_9000/exp_cant_palabras_9000_6.txt 
+instancias/exp_cant_palabras_9000/exp_cant_palabras_9000_7.txt 
+instancias/exp_cant_palabras_9000/exp_cant_palabras_9000_8.txt 
+instancias/exp_cant_palabras_9000/exp_cant_palabras_9000_9.txt 
+instancias/exp_cant_palabras_9000/exp_cant_palabras_9000_10.txt 

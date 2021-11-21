@@ -1,0 +1,10 @@
+instancias/exp_cant_palabras_4000/exp_cant_palabras_4000_1.txt 
+instancias/exp_cant_palabras_4000/exp_cant_palabras_4000_2.txt 
+instancias/exp_cant_palabras_4000/exp_cant_palabras_4000_3.txt 
+instancias/exp_cant_palabras_4000/exp_cant_palabras_4000_4.txt 
+instancias/exp_cant_palabras_4000/exp_cant_palabras_4000_5.txt 
+instancias/exp_cant_palabras_4000/exp_cant_palabras_4000_6.txt 
+instancias/exp_cant_palabras_4000/exp_cant_palabras_4000_7.txt 
+instancias/exp_cant_palabras_4000/exp_cant_palabras_4000_8.txt 
+instancias/exp_cant_palabras_4000/exp_cant_palabras_4000_9.txt 
+instancias/exp_cant_palabras_4000/exp_cant_palabras_4000_10.txt 

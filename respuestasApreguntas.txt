@@ -1,0 +1,23 @@
+PASAR AL INFORME
+1) Una variable de tipo atomica, en general, es aquella que no permite la ocurrencia de condiciones de carrera sobre si. Esto quiere decir que al modificarla mediante funciones o al observar sus valores, no se producen resultados inconsistentes. Particularmente para la lista concurrente, significa que no puede darse la situacion en que cuando multiples procesos realizan una insercion sobre ella, alguno de los elementos no sea insertado, o se rompa con la estructura de una lista (por ejemplo que hayan dos o mas nodos que apunten al mismo nodo siguiente, o que la lista no acabe en nullptr eventualmente). 
+
+La situacion 'borde' en este caso seria la siguiente... 
+Sea la lista l = a -> b -> c
+Sean los P_1, P_2, ..., P_n procesos que intentan insertar sobre la lista
+Supongamos que el proceso P_1 intenta insertar el nodo 'x' y al terminar de ejecutar 'Nodo* iter = _cabeza;', ningun otro proceso inserto nada. En este caso, se ejecutaria 'nuevo->_siguiente = iter;' de manera tal que nuestro nuevo nodo apunte a la vieja cabeza, y se actualizaria la cabeza al llamar a 'this->_cabeza.compare_exchange_weak(iter,nuevo)', que al ver que iter es igual de this_cabeza, le asigna a this_cabeza el valor del nuevo nodo y se retornaria true (como esta negada en la condicion del bucle, no se vuelve a ejecutar) quedando asi la lista como x -> a -> b -> c
+Supongamos ahora que el proceso P_2 intenta insertar un elemento z, y justo al terminar de ejecutarse la sentencia 'Nodo* iter = _cabeza;' ocurre que P_2 inserta un nodo de valor d antes, asi queda la lista como d -> a -> b -> c y la 'cabeza' asignada al nodo 'iter' ya no es mas la cabeza, por lo que al ejecutarse el bucle se le asigna como nodo siguiente a 'z' al nodo 'a' lo cual es incorrecto pues ahora deberia apuntar a 'd'. Pero luego de esto se ejecuta this->_cabeza.compare_exchange_weak(iter,nuevo) (recordemos que es una funcion que hace una comparacion entre valores mas una asignacion de manera atomica) y al ver que iter no es igual a cabeza, se le asigna a iter el valor de this_cabeza, por lo tanto en la siguiente iteracion el siguiente de 'z' pasara a ser d, y en la proxima ejecucion del compare_and_exchange se actualizara la cabeza con el valor 'z'.
+En resumen, siempre que querramos insertar una cabeza y se de la situacion en que *iter apunte a la cabeza desactualizada, el bucle no terminara hasta que este no sea el caso y la cabeza sea igual al iterador. 
+
+
+2)
+Para poder incrementar concurrentemente, creamos un arreglo de 26 mutex (uno por cada clave de hash), de manera tal que al estar modificando el valor de (o agregando) una clave, no se permita la modificacion de la lista asociada al hash. Esto quiere decir que se pueden incrementar hasta 26 claves en simultaneo, cuando tienen distintas iniciales.
+
+3)
+a)
+Como explicaremos con mas detalle en la experimentacion, puede ocurrir que llamemos a maximo() antes de incrementar(), pero que por alguna razon el incremento se de sobre una variable que pasa a ser maxima antes de terminar de hallar el maximo, y que el maximo que se retorne no sea el maximo de la estructura al momento de haberlo pedido. Tambien puede ocurrir que incrementar() se llame antes que maximo(), pero que el maximo sea hallado antes de terminar de incrementar y que el maximo sea el del estado anterior a incrementar la clave. Esos son los dos principales problemas.
+
+No vemos (o al menos Marco no ve) un escenario en donde el maximo devuelto no haya sido nunca el maximo del diccionario.
+
+b) Para garantizar que los threads hagan busquedas en listas distintas, y que no se produzcan busquedas repetidas en ellas, definimos una variable atomica compartida (hashIndex) utilizada para indexar la tabla de hash. Esta variable es incrementada de manera atomica por cada thread, y tambien es incrementada por cada thread al terminar la busqueda del maximo en una lista, pasando asi el thread a buscarlo en otra. Al terminar con cada lista, se almacena el maximo de cada una en un arreglo de pares (max_value, de tamanio 26, tambien compartida e indexada con hashIndex) y una vez que se terminan de ejecutar todos los threads se procede a encontrar el maximo par dentro de max_value. 
+
+

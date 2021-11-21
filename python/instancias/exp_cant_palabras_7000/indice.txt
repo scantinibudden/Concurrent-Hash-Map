@@ -1,0 +1,10 @@
+instancias/exp_cant_palabras_7000/exp_cant_palabras_7000_1.txt 
+instancias/exp_cant_palabras_7000/exp_cant_palabras_7000_2.txt 
+instancias/exp_cant_palabras_7000/exp_cant_palabras_7000_3.txt 
+instancias/exp_cant_palabras_7000/exp_cant_palabras_7000_4.txt 
+instancias/exp_cant_palabras_7000/exp_cant_palabras_7000_5.txt 
+instancias/exp_cant_palabras_7000/exp_cant_palabras_7000_6.txt 
+instancias/exp_cant_palabras_7000/exp_cant_palabras_7000_7.txt 
+instancias/exp_cant_palabras_7000/exp_cant_palabras_7000_8.txt 
+instancias/exp_cant_palabras_7000/exp_cant_palabras_7000_9.txt 
+instancias/exp_cant_palabras_7000/exp_cant_palabras_7000_10.txt 
